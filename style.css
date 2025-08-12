@@ -1,0 +1,45 @@
+body{
+    font-family: arial;
+}
+
+
+.conteiner-calc button{
+    height: 100px;
+    width: 100px;
+    border: 0;
+    background-color: rgb(206, 206, 206);
+    font-size: 29px;
+}
+.conteiner-calc button:hover{
+    transform: scale(1.1);
+    background-color: rgb(192, 217, 255);
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.conteiner-calc button:active{
+    transform: (1.0);
+    background-color: rgb(173, 173, 255);
+    transition: 0,5s;
+}
+.especiais button{
+    background-color: rgb(255, 0, 0);
+}
+
+.conteiner-calc{
+    background-color: rgb(206, 206, 206);
+    
+    position: absolute;
+}
+.conteiner-calc .conteiner-result{
+    height: 100px;
+    background-color: black;
+    text-align: left;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+}
+.conteiner-calc .conteiner-result p{
+  padding-left: 2%;
+  width: 100px;
+}
