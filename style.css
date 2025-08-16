@@ -2,7 +2,6 @@ body{
     font-family: arial;
 }
 
-
 .conteiner-calc button{
     height: 100px;
     width: 100px;
@@ -42,4 +41,12 @@ body{
 .conteiner-calc .conteiner-result p{
   padding-left: 2%;
   width: 100px;
+}
+@media screen and (max-width: 581px ) {
+.conteiner-calc button{
+
+    font-size: 20px;
+    width: 80px;
+    transition: 500ms;
+}
 }
