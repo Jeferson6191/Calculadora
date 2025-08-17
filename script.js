@@ -14,6 +14,7 @@ var mais = document.querySelector("#maisbtn");
 var vezes = document.querySelector("#vezesbtn");
 var igual = document.querySelector("#igualbtn");
 var C = document.querySelector("#C");
+var divisao = document.querySelector('#divisaobtn');
 
 var indexone =[];
 var indextwo = [];
@@ -21,6 +22,18 @@ var indextwo = [];
 var contaswitch=false
 var afterigual=false
 var resultindex
+
+divisao.addEventListener('click', ()=>{
+    if (contaswitch==true) {
+        window.alert("ja foi pressionado")
+    }else{
+        resultado.innerHTML+="/"
+       
+        resultindex = "/"
+    }
+     contaswitch=true
+})
+
 mais.addEventListener('click', ()=>{
     if (contaswitch==true) {
         window.alert("ja foi pressionado")
@@ -67,7 +80,10 @@ igual.addEventListener('click', ()=>{
         resultado.innerHTML=String(indexoneresult-indextworesult)
     }else if (resultindex =='+') {
         resultado.innerHTML=String(indexoneresult+indextworesult)
-    }else{
+    }else if (resultindex =='/'){
+        resultado.innerHTML=String(indexoneresult/indextworesult)
+    }
+    else{
         resultado.innerHTML = String(indexoneresult)
         
     }
